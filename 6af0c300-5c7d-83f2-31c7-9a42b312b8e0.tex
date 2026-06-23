@@ -1,0 +1,81 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{amssymb, amsmath, amsbsy}
+\usepackage{verbatim}
+\usepackage{mathpazo}
+\usepackage{tasks}
+\usepackage{enumerate}
+\usepackage[pdftex]{hyperref}
+\hypersetup{pdftitle={Examen de Investigación Operativa },pdfauthor={Luis Carrillo Gutiérrez}}
+
+\fontfamily{cmss}\selectfont
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\subsection*{Tercer Examen de Investigación Operativa} 
+\end{center}
+
+\noindent Nombres / Apellidos : \rule{10cm}{0.4pt} \\ 
+Fecha : \rule{2cm}{0.4pt}  / \rule{2cm}{0.4pt} / \rule{2cm}{0.4pt} \hspace{3.4cm} Duración: {\small 90 minutos} \\
+
+\begin{enumerate}
+\item{Proponer una definición para los siguientes conceptos :
+\begin{itemize}
+\item{Casillero básico} 
+\item{Arco básico}
+\item{Ciclo marginal}
+\item{Costo marginal}
+\end{itemize}
+}
+\item{Hallar el valor de las \emph{variables duales} del siguiente problema e intérpretar adecuadamente los resultados :
+$$Max\;\mathbf{Z} = 200\,x_{1} + 220\,x_{2} + 240\,x_{3}$$
+s.a
+\begin{eqnarray*}
+2 x_{1} + x_{2} + 2 x_{3} & \leq & 4800 \\
+x_{1} + x_{2} + 2 x_{3} & \leq & 3400 \\
+2 x_{1} + x_{2} + x_{3} & \leq & 4000 \\
+x_{1}\;\geq 0,\quad x_{2}\;\geq 0,\; & x_{3} & \geq 0 
+\end{eqnarray*}
+}
+\item{Hallar la solución óptima del siguiente problema de transporte ({\small Los datos de cada casillero son los costos}).
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline 
+		\empty & \multicolumn{4}{c|}{$b_{i}$} \\
+		\hline
+		$a_{i}$ & 240 & 200 & 250 & 100 \\
+		\hline 
+		160 & 5 & 6 & 9 & 8 \\
+		180 & 8 & 8 & 4 & 9 \\
+		280 & 9 & 10 & 6 & 7 \\
+		200 & 7 & 5 & 8 & 10 \\
+		160 & 8 & 9 & 10 & 7 \\
+		\hline
+	\end{tabular}
+\end{center}
+}
+\item{Se desea asignar $6$ obreros a $6$ puestos de trabajo, la tabla muestra los rendimientos de cada obrero en cada puesto. Hallar la \emph{asignación óptima}.
+
+\begin{center}
+	\begin{tabular}{| p{1cm} ||c|c|c|c|c|c|}
+		\hline
+		\empty & A & B & C & D & E & F \\
+		\hline
+		1 & 90 & 100 & 92 & 102 & 78 & 78 \\
+		2 & 76 & 78 & 94 & 80 & 79 & 84 \\
+		3 & 85 & 92 & 86 & 92 & 91 & 80 \\
+		4 & 79 & 97 & 84 & 95 & 84 & 76 \\
+		5 & -- & 87 & 89 & 80 & 85 & 88 \\
+		6 & 80 & 90 & 79 & 82 & 84 & 82 \\
+		\hline
+	\end{tabular}
+\end{center}
+}
+\end{enumerate}
+\end{document}
